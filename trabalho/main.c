@@ -29,7 +29,6 @@ int main() {
                 Artista novoArtista;
                 printf("Digite o nome do novo artista: ");
                 scanf(" %[^\n]", novoArtista.nome);
-                // Preencha os demais campos do novoArtista se necessário
                 inserirArtistaOrdenado(artistas, &total_artistas, novoArtista);
                 printf("Novo artista inserido com sucesso.\n");
                 break;
