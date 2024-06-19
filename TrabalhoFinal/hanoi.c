@@ -107,7 +107,7 @@ if(resposta == 1) {
     system("clear");
   printf("Insira o número de discos: ");
   scanf("%d", &num_discos);
-
+}
   if (num_discos <= 0 || num_discos > MAX_DISCOS) {
     printf("Número de discos inválido! Deve estar entre 1 e %d.\n", MAX_DISCOS);
     return 1;
@@ -131,6 +131,6 @@ if(resposta == 1) {
       printf("Entrada inválida!\n");
     }
   }
-
+  
   return 0;
 }
