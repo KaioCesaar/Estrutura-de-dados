@@ -1,6 +1,7 @@
 #include "hanoi.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 
 void inicializaPilha(Pilha *p) { p->topo = -1; }
 
@@ -86,6 +87,7 @@ void moveDisco(Pilha *origem, Pilha *destino) {
 int main() {
   Pilha torres[3];
   int num_discos, resposta;
+  setlocale(LC_ALL, "Portuguese");
   
 
   printf("------------------ TORRE DE HANÓI ------------------");
