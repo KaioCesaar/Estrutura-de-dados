@@ -85,8 +85,24 @@ void moveDisco(Pilha *origem, Pilha *destino) {
 
 int main() {
   Pilha torres[3];
-  int num_discos;
+  int num_discos, resposta;
+  
 
+  printf("------------------ TORRE DE HANÓI ------------------");
+    printf("\n\nEsse jogo tem como objetivo deslocar todos os discos de um pilar para outro qualquer, obedecendo a quatro regras regras:");
+
+    printf("\n\n------------------ REGRAS ------------------");
+    printf("\n\n1. Movimentar um disco de cada vez.");
+    printf("\n2. Um disco com diâmetro maior nunca pode ficar sobre um disco com diâmetro menor.");
+    printf("\n3. Não é permitido movimentar uma peça que esteja abaixo de outra.");
+    printf("\n4. A qualquer momento, digite ""0 0"" para reiniciar o jogo.");
+    printf("\n\n------------------------------------------------------");
+    printf("\n\nPronto para jogar [1] Sim / [0] Não, encerrar: ");
+    scanf("%d", &resposta); 
+
+if(resposta == 1) {
+    reiniciaJogo:
+    system("clear");
   printf("Insira o número de discos: ");
   scanf("%d", &num_discos);
 
