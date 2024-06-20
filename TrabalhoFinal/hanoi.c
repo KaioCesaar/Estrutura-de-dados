@@ -51,7 +51,7 @@ void inicializaJogo(Pilha *t1, Pilha *t2, Pilha *t3, int num_discos) {
 }
 
 void exibeTorres(Pilha *t1, Pilha *t2, Pilha *t3, int num_discos) {
-  system("clear");
+  system("cls");
   printf("\nTorre 1:\n");
   imprimePilha(t1, num_discos);
   printf("\nTorre 2:\n");
@@ -91,7 +91,7 @@ int main() {
   
 
   printf("===================================================\n");
-  printf("             BEM-VINDO À TORRE DE HANÓI\n");
+  printf("             BEM-VINDO A TORRE DE HANOI\n");
   printf("===================================================\n\n");
   printf("             Objetivo do Jogo:\n");
   printf("  Transferir todos os discos de um pilar para outro,\n");
@@ -103,26 +103,26 @@ int main() {
   printf("1. Mova apenas um disco por vez.\n");
   printf("2. Um disco maior nunca pode ser colocado sobre um\n");
   printf("   disco menor.\n");
-  printf("3. Não mova discos que estão abaixo de outros.\n");
+  printf("3. Nao mova discos que estão abaixo de outros.\n");
   printf("4. A qualquer momento, digite \"0 0\" para reiniciar\n");
   printf("   o jogo.\n");
   printf("===================================================\n\n");
 
-  printf("Você está pronto para jogar?\n");
+  printf("Voce esta pronto para jogar?\n");
   printf("  [1] Sim\n");
-  printf("  [0] Não, encerrar\n");
+  printf("  [0] Nao, encerrar\n");
   printf("===================================================\n");
-  printf("Escolha uma opção: ");
+  printf("Escolha uma opcao: ");
     scanf("%d", &resposta); 
 
 if(resposta == 1) {
     reiniciaJogo:
-    system("clear");
-  printf("Insira o número de discos: ");
+    system("cls");
+  printf("Insira o numero de discos: ");
   scanf("%d", &num_discos);
 }
   if (num_discos <= 0 || num_discos > MAX_DISCOS) {
-    printf("Número de discos inválido! Deve estar entre 1 e %d.\n", MAX_DISCOS);
+    printf("Numero de discos invalido! Deve estar entre 1 e %d.\n", MAX_DISCOS);
     return 1;
   }
 
@@ -141,7 +141,7 @@ if(resposta == 1) {
     } else if (origem >= 1 && origem <= 3 && destino >= 1 && destino <= 3) {
       moveDisco(&torres[origem - 1], &torres[destino - 1]);
     } else {
-      printf("Entrada inválida!\n");
+      printf("Entrada invalida!\n");
     }
   }
   
