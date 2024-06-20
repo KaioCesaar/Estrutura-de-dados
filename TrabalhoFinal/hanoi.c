@@ -90,16 +90,29 @@ int main() {
   setlocale(LC_ALL, "Portuguese");
   
 
-  printf("------------------ TORRE DE HANÓI ------------------");
-    printf("\n\nEsse jogo tem como objetivo deslocar todos os discos de um pilar para outro qualquer, obedecendo a quatro regras regras:");
+  printf("===================================================\n");
+  printf("             BEM-VINDO À TORRE DE HANÓI\n");
+  printf("===================================================\n\n");
+  printf("             Objetivo do Jogo:\n");
+  printf("  Transferir todos os discos de um pilar para outro,\n");
+  printf("  respeitando as regras descritas abaixo.\n\n");
 
-    printf("\n\n------------------ REGRAS ------------------");
-    printf("\n\n1. Movimentar um disco de cada vez.");
-    printf("\n2. Um disco com diâmetro maior nunca pode ficar sobre um disco com diâmetro menor.");
-    printf("\n3. Não é permitido movimentar uma peça que esteja abaixo de outra.");
-    printf("\n4. A qualquer momento, digite ""0 0"" para reiniciar o jogo.");
-    printf("\n\n------------------------------------------------------");
-    printf("\n\nPronto para jogar [1] Sim / [0] Não, encerrar: ");
+  printf("===================================================\n");
+  printf("                   REGRAS\n");
+  printf("===================================================\n");
+  printf("1. Mova apenas um disco por vez.\n");
+  printf("2. Um disco maior nunca pode ser colocado sobre um\n");
+  printf("   disco menor.\n");
+  printf("3. Não mova discos que estão abaixo de outros.\n");
+  printf("4. A qualquer momento, digite \"0 0\" para reiniciar\n");
+  printf("   o jogo.\n");
+  printf("===================================================\n\n");
+
+  printf("Você está pronto para jogar?\n");
+  printf("  [1] Sim\n");
+  printf("  [0] Não, encerrar\n");
+  printf("===================================================\n");
+  printf("Escolha uma opção: ");
     scanf("%d", &resposta); 
 
 if(resposta == 1) {
