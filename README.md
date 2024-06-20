@@ -1,4 +1,3 @@
-# Estrutura-de-dados
 #include "hanoi.h"
 #include <stdio.h>
 #include <stdlib.h>
