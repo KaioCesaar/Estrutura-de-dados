@@ -118,7 +118,6 @@ int main() {
     scanf("%d", &resposta); 
 
 if(resposta == 1) {
-    reiniciaJogo:
     system("cls");
   printf("Insira o numero de discos: ");
   scanf("%d", &num_discos);
