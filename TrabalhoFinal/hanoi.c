@@ -103,7 +103,7 @@ int main() {
   printf("1. Mova apenas um disco por vez.\n");
   printf("2. Um disco maior nunca pode ser colocado sobre um\n");
   printf("   disco menor.\n");
-  printf("3. Nao mova discos que estão abaixo de outros.\n");
+  printf("3. Nao mova discos que estao abaixo de outros.\n");
   printf("4. A qualquer momento, digite \"0 0\" para reiniciar\n");
   printf("   o jogo.\n");
   printf("===================================================\n\n");
